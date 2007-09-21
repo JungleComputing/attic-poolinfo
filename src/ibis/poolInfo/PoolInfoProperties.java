@@ -1,4 +1,4 @@
-package ibis.server.poolInfo;
+package ibis.poolInfo;
 
 import ibis.util.TypedProperties;
 

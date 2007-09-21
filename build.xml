@@ -48,7 +48,7 @@
 			destfile="lib/${jar-file}" 
 			basedir="tmp">
 			<manifest>
-				<attribute name="Ibis-Service" value="ibis.server.poolInfo.Service" />
+				<attribute name="Ibis-Service" value="ibis.poolInfo.Service" />
 			</manifest>
 		</jar>
 

@@ -1,6 +1,6 @@
 /* $Id: PoolInfo.java 5075 2007-02-22 16:43:45Z ceriel $ */
 
-package ibis.server.poolInfo;
+package ibis.poolInfo;
 
 import ibis.ipl.IbisProperties;
 import ibis.server.Client;

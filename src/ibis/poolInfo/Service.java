@@ -1,4 +1,4 @@
-package ibis.server.poolInfo;
+package ibis.poolInfo;
 
 import ibis.server.ServerProperties;
 import ibis.smartsockets.virtual.VirtualServerSocket;
