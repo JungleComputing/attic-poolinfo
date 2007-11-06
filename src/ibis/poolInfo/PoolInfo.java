@@ -174,7 +174,7 @@ public class PoolInfo {
     /**
      * Returns the IP address of the machine with the given rank.
      * 
-     * @param the
+     * @param rank the
      *            rank of the machine
      * @return the IP address of the machine.
      */
@@ -196,7 +196,7 @@ public class PoolInfo {
      * Returns all IP addresses of the machine with the given rank, as an
      * IPAddressSet.
      * 
-     * @param the
+     * @param rank the
      *            rank of the machine
      * @return all IP addresses of the machine.
      */
