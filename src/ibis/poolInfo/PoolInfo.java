@@ -2,7 +2,6 @@
 
 package ibis.poolInfo;
 
-import ibis.ipl.IbisProperties;
 import ibis.server.Client;
 import ibis.smartsockets.direct.IPAddressSet;
 import ibis.smartsockets.virtual.VirtualSocket;
@@ -46,13 +45,13 @@ public class PoolInfo {
 
     private final IPAddressSet[] addresses;
 
-    public PoolInfo(Properties properties, boolean addDefaultConfigProperties)
+    public PoolInfo(Properties properties, boolean addSystemProperties)
             throws Exception {
         TypedProperties typedProperties = PoolInfoProperties
                 .getHardcodedProperties();
 
-        if (addDefaultConfigProperties) {
-            typedProperties.addProperties(IbisProperties.getDefaultProperties());
+        if (addSystemProperties) {
+            typedProperties.addProperties(System.getProperties());
         }
 
         typedProperties.addProperties(properties);
