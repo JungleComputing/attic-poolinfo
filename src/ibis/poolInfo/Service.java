@@ -51,10 +51,18 @@ public final class Service implements ibis.server.Service, Runnable {
                         + VIRTUAL_PORT);
     }
 
-    public void end(boolean waitUntilIdle) {
-        // TODO Auto-generated method stub
-
+    public void end(long deadline) {
+        //NOTHING
     }
+    
+    public String getServiceName() {
+        return "poolinfo";
+    }
+
+    public Map<String, String> getStats() {
+        return new HashMap<String, String>();
+    }
+
 
     private synchronized Pool getPool(String poolName, int size) {
         Pool pool = pools.get(poolName);
@@ -135,5 +143,6 @@ public final class Service implements ibis.server.Service, Runnable {
         }
 
     }
+
 
 }
